@@ -1,5 +1,6 @@
 module.exports = {
   siteName: "Thought Reactor",
+  siteUrl: "https://thought-reactor.net",
   plugins: [
     {
       use: "@gridsome/plugin-google-analytics",
