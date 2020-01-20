@@ -12,6 +12,7 @@
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.32"
+    "gridsome-plugin-tailwindcss": "^2.2.32",
+    "sass-loader": "^8.0.2"
   }
 }
