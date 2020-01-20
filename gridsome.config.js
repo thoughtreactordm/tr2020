@@ -13,6 +13,9 @@ module.exports = {
       options: {
         cacheTime: 600000 // default
       }
+    },
+    {
+      use: "gridsome-plugin-tailwindcss"
     }
   ]
 };

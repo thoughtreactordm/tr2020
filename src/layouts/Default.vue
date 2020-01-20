@@ -25,7 +25,13 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  background: #222;
+
+  background: rgb(17, 17, 17);
+  background: radial-gradient(
+    circle,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(34, 34, 34, 1) 100%
+  );
   color: white;
 
   display: flex;
