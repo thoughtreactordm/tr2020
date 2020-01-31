@@ -1,68 +1,31 @@
 <template>
   <Layout>
-    <g-image src="~/assets/img/logo.svg" class="logo"></g-image>
-
-    <h1>NEW SITE COMING SOON...</h1>
-
-    <h3>
-      Play Our Games on
-      <a href="https://thoughtreactor.itch.io">Itch.io</a>!
-    </h3>
-
-    <div class="socials">
-      <a href="https://twitter.com/thought_reactor">TWITTER</a>
-      <a href="https://instagram.com/thoughtreactor">INSTAGRAM</a>
-      <a href="https://twitch.tv/thoughtreactordev">TWITCH</a>
-    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magnam
+      architecto maiores reiciendis eius qui! Rerum beatae molestias qui
+      doloremque laboriosam hic saepe pariatur eius, voluptatem veritatis
+      explicabo magnam magni! Architecto sapiente reprehenderit perspiciatis
+      facilis adipisci? Delectus dicta id ratione libero officia quam ullam,
+      illum error voluptatum corrupti sed perferendis odit harum iusto
+      voluptates modi non laboriosam. Adipisci, quo omnis. Voluptates dolorem
+      molestias incidunt, autem corrupti ab illum magnam perspiciatis inventore
+      laborum aliquid nemo laboriosam vel, odit accusantium. Reiciendis
+      accusamus, consequuntur eum magnam aut sed ipsa voluptatibus ut
+      exercitationem ad? Id est, iusto alias amet nulla ab, quae dolore porro
+      excepturi ratione exercitationem eum minus expedita mollitia sunt ea
+      provident consequuntur cumque. Nostrum esse alias, ipsa totam accusamus
+      illo! Cum! Autem saepe blanditiis dicta, reiciendis tempora labore dolores
+      deleniti praesentium ipsum aperiam minus porro, debitis nisi quas qui
+      animi maxime distinctio voluptates quisquam iusto perspiciatis voluptatem
+      alias? Architecto, aut tempora.
+    </p>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: "Coming Soon..."
+    title: "Games that soothe ya' noggin'"
   }
 };
 </script>
-
-<style lang="scss">
-h1 {
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.3rem;
-
-  a {
-    color: #da4917;
-  }
-}
-
-.logo {
-  width: 100%;
-  max-width: 900px;
-}
-
-.socials {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 600px;
-  padding: 2em;
-}
-
-.socials > a {
-  color: #da4917;
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 0.5em;
-}
-
-.socials > a:hover {
-  color: white;
-}
-</style>
