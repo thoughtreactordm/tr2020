@@ -5,7 +5,7 @@
       :href="social.url"
       :title="social.label"
       :key="social.icon"
-      class="p-2 hover:text-orange-400"
+      class="social-icon p-2 hover:text-orange-400"
     >
       <feather :type="social.icon"></feather>
     </a>
@@ -44,3 +44,13 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+a.social-icon {
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05) translateY(-2px);
+  }
+}
+</style>
