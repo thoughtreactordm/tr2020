@@ -1,5 +1,7 @@
 <template>
   <Layout>
+    <newsletter />
+
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magnam
       architecto maiores reiciendis eius qui! Rerum beatae molestias qui
@@ -23,7 +25,11 @@
 </template>
 
 <script>
+import Newsletter from "@/components/partials/Newsletter.vue";
+
 export default {
+  components: { Newsletter },
+
   metaInfo: {
     title: "Games that soothe ya' noggin'"
   }

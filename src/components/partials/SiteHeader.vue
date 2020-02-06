@@ -3,7 +3,11 @@
     class="w-full border-t-8 bg-gradient-b-banner border-gradient-r-brand p-16 flex flex-col justify-center items-center"
   >
     <g-link href="/" title="Home Page">
-      <g-image src="~/assets/img/logo.svg" class="logo" alt="Thought Reactor Logo"></g-image>
+      <g-image
+        src="~/assets/img/logo.svg"
+        class="logo"
+        alt="Thought Reactor Logo"
+      ></g-image>
     </g-link>
 
     <socials class="text-white" />
