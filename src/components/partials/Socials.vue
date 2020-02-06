@@ -7,7 +7,7 @@
       :key="social.icon"
       class="social-icon p-2 hover:text-orange-400"
     >
-      <feather :type="social.icon"></feather>
+      <i data-feather="social.icon"></i>
     </a>
   </div>
 </template>

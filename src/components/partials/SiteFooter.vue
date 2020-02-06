@@ -7,7 +7,7 @@
     </p>
 
     <p class="font-bold text-orange-700 mt-4 flex items-center justify-center">
-      Built with <feather type="heart" class="px-1"></feather> using&nbsp;<a
+      Built with <i data-feather="heart" class="px-1"></i> using&nbsp;<a
         href="https://vuejs.org"
         class="hover:underline hover:text-orange-300"
         >Vue</a

@@ -1,13 +1,12 @@
 import "@/styles/main.css";
 
-import VueFeather from "vue-feather";
-
 import DefaultLayout from "~/layouts/Default.vue";
+
+require("feather-icons");
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
-  Vue.use(VueFeather);
 
   head.meta.push({
     name: "description",
