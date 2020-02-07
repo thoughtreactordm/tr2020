@@ -7,10 +7,13 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.2.3",
     "axios": "^0.19.2",
-    "feather-icons": "^4.25.0",
     "gridsome": "^0.7.0",
     "tailwindcss": "^1.2.0",
     "tailwindcss-border-gradients": "^2.0.3",

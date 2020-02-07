@@ -1,12 +1,22 @@
 import "@/styles/main.css";
 
-import DefaultLayout from "~/layouts/Default.vue";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library, layer } from "@fortawesome/fontawesome-svg-core";
+import { faTwitch } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faItchIo } from "@fortawesome/free-brands-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
-require("feather-icons");
+library.add(faItchIo, faTwitch, faTwitter, faYoutube, faInstagram, faHeart);
+
+import DefaultLayout from "~/layouts/Default.vue";
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
+  Vue.component("font-awesome-icon", FontAwesomeIcon);
 
   head.meta.push({
     name: "description",

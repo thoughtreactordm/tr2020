@@ -6,25 +6,34 @@
       Thought Reactor&copy;{{ year }}, All Rights Reserved.
     </p>
 
-    <p class="font-bold text-orange-700 mt-4 flex items-center justify-center">
-      Built with <i data-feather="heart" class="px-1"></i> using&nbsp;<a
-        href="https://vuejs.org"
-        class="hover:underline hover:text-orange-300"
-        >Vue</a
-      >,&nbsp;<a
-        href="https://gridsome.org"
-        class="hover:underline hover:text-orange-300"
-        >Gridsome</a
-      >, and&nbsp;<a
-        href="https://tailwindcss.com"
-        class="hover:underline hover:text-orange-300"
-        >TailwindCSS</a
-      >. Hosted on&nbsp;<a
-        href="https://netflify.com"
-        class="hover:underline hover:text-orange-300"
-        >Netlify</a
-      >.
-    </p>
+    <div
+      class="font-bold text-orange-700 mt-4 flex items-center justify-center"
+    >
+      <p>
+        Built with
+        <font-awesome-icon
+          :icon="['fas', 'heart']"
+          fixed-width
+        ></font-awesome-icon>
+        using&nbsp;<a
+          href="https://vuejs.org"
+          class="hover:underline hover:text-orange-300"
+          >Vue</a
+        >,&nbsp;<a
+          href="https://gridsome.org"
+          class="hover:underline hover:text-orange-300"
+          >Gridsome</a
+        >, and&nbsp;<a
+          href="https://tailwindcss.com"
+          class="hover:underline hover:text-orange-300"
+          >TailwindCSS</a
+        >. Hosted on&nbsp;<a
+          href="https://netflify.com"
+          class="hover:underline hover:text-orange-300"
+          >Netlify</a
+        >.
+      </p>
+    </div>
   </footer>
 </template>
 

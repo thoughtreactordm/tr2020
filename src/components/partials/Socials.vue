@@ -7,7 +7,10 @@
       :key="social.icon"
       class="social-icon p-2 hover:text-orange-400"
     >
-      <i data-feather="social.icon"></i>
+      <font-awesome-icon
+        :icon="['fab', social.icon]"
+        size="lg"
+      ></font-awesome-icon>
     </a>
   </div>
 </template>
@@ -19,6 +22,11 @@ export default {
   data() {
     return {
       socials: [
+        {
+          icon: "itch-io",
+          label: "Thought Reactor at Itch.io",
+          url: "https://thoughtreactor.itch.io"
+        },
         {
           icon: "twitter",
           label: "@thought_reactor on Twitter",
