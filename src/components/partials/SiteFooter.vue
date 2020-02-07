@@ -34,6 +34,17 @@
         >.
       </p>
     </div>
+
+    <div>
+      <p class="text-orange-700 mt-2 text-sm">
+        This site is open source and can be found on
+        <a
+          class="hover:underline hover:text-orange-300"
+          href="https://github.com/thoughtreactordm/tr2020"
+          >GitHub</a
+        >.
+      </p>
+    </div>
   </footer>
 </template>
 
