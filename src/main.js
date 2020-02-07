@@ -13,10 +13,16 @@ library.add(faItchIo, faTwitch, faTwitter, faYoutube, faInstagram, faHeart);
 
 import DefaultLayout from "~/layouts/Default.vue";
 
+import UI from "./components/elements";
+
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome-icon", FontAwesomeIcon);
+
+  UI.forEach(c => {
+    Vue.component(c.name, c);
+  });
 
   head.meta.push({
     name: "description",

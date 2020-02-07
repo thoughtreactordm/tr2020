@@ -1,5 +1,5 @@
 <template>
-  <div class="m-4 flex items-center justify-center">
+  <div class="m-4 flex flex-wrap items-center justify-center">
     <a
       v-for="social in socials"
       :href="social.url"
@@ -7,10 +7,7 @@
       :key="social.icon"
       class="social-icon p-2 hover:text-orange-400"
     >
-      <font-awesome-icon
-        :icon="['fab', social.icon]"
-        size="lg"
-      ></font-awesome-icon>
+      <font-awesome-icon :icon="['fab', social.icon]" :size="size"></font-awesome-icon>
     </a>
   </div>
 </template>
@@ -18,6 +15,13 @@
 <script>
 export default {
   name: "socials",
+
+  props: {
+    size: {
+      type: String,
+      default: "lg"
+    }
+  },
 
   data() {
     return {

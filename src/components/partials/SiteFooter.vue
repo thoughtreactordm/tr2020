@@ -1,37 +1,21 @@
 <template>
   <footer class="bg-gradient-t-footer p-16 mt-8 text-center text-orange-600">
-    <socials />
+    <socials size="2x" />
 
-    <p class="font-bold">
-      Thought Reactor&copy;{{ year }}, All Rights Reserved.
-    </p>
+    <p class="font-bold">Thought Reactor&copy;{{ year }}, All Rights Reserved.</p>
 
-    <div
-      class="font-bold text-orange-700 mt-4 flex items-center justify-center"
-    >
+    <div class="font-bold text-orange-700 mt-4 flex items-center justify-center">
       <p>
         Built with
-        <font-awesome-icon
-          :icon="['fas', 'heart']"
-          fixed-width
-        ></font-awesome-icon>
-        using&nbsp;<a
-          href="https://vuejs.org"
-          class="hover:underline hover:text-orange-300"
-          >Vue</a
-        >,&nbsp;<a
-          href="https://gridsome.org"
-          class="hover:underline hover:text-orange-300"
-          >Gridsome</a
-        >, and&nbsp;<a
+        <font-awesome-icon :icon="['fas', 'heart']" fixed-width></font-awesome-icon>&nbsp;using
+        <a href="https://vuejs.org" class="hover:underline hover:text-orange-300">Vue</a>,
+        <a href="https://gridsome.org" class="hover:underline hover:text-orange-300">Gridsome</a>, and
+        <a
           href="https://tailwindcss.com"
           class="hover:underline hover:text-orange-300"
-          >TailwindCSS</a
-        >. Hosted on&nbsp;<a
-          href="https://netflify.com"
-          class="hover:underline hover:text-orange-300"
-          >Netlify</a
-        >.
+        >TailwindCSS</a>.
+        <br />Hosted on
+        <a href="https://netflify.com" class="hover:underline hover:text-orange-300">Netlify</a>.
       </p>
     </div>
 
@@ -41,8 +25,7 @@
         <a
           class="hover:underline hover:text-orange-300"
           href="https://github.com/thoughtreactordm/tr2020"
-          >GitHub</a
-        >.
+        >GitHub</a>.
       </p>
     </div>
   </footer>

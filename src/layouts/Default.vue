@@ -2,7 +2,7 @@
   <div class="layout">
     <site-header />
 
-    <main class="container mx-auto px-4">
+    <main>
       <slot />
     </main>
 
