@@ -1,7 +1,7 @@
 <template>
   <div class="p-8 flex justify-center">
     <form
-      @submit.prevent="submit"
+      @submit.prevent="handleSubmit"
       name="newsletter"
       method="post"
       action="/success/"
