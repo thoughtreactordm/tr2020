@@ -14,6 +14,7 @@
       </p>
       <input
         type="email"
+        name="email"
         v-model="formData.email"
         placeholder="Email address"
       />
