@@ -17,15 +17,24 @@
         name="email"
         v-model="formData.email"
         placeholder="Email address"
+        class="outline-none p-2 bg-grey-200 text-grey-600 focus:bg-orange-100 w-64"
+        :disabled="formSuccess"
       />
-      <button type="submit">Subscribe</button>
+      <button
+        type="submit"
+        :disabled="formSuccess"
+        class="bg-orange-500 hover:bg-orange-700 px-4 py-2 text-orange-800 hover:text-orange-200 font-bold transition duration-150 ease-in-out"
+      >
+        Subscribe
+      </button>
+      <p v-if="formSuccess" class="text-center font-bold">
+        Submitted! Check your email your subscription.
+      </p>
     </form>
   </div>
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   name: "newsletter",
 
@@ -33,7 +42,8 @@ export default {
     return {
       formData: {
         email: ""
-      }
+      },
+      formSuccess: false
     };
   },
 
@@ -55,7 +65,10 @@ export default {
         })
       })
         .then(result => {
-          console.log(result);
+          if (result.status === 200) {
+            this.formData.email = "";
+            this.formSuccess = true;
+          }
         })
         .catch(error => alert(error));
     }
