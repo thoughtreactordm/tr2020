@@ -8,7 +8,15 @@
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
-      <input type="email" v-model="email" placeholder="Email address" />
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <label> Don’t fill this out: <input name="bot-field" /> </label>
+      </p>
+      <input
+        type="email"
+        v-model="formData.email"
+        placeholder="Email address"
+      />
       <button type="submit">Subscribe</button>
     </form>
   </div>
@@ -22,30 +30,33 @@ export default {
 
   data() {
     return {
-      email: ""
+      formData: {
+        email: ""
+      }
     };
   },
 
   methods: {
-    submit(e) {
-      let data = {
-        "form-name": e.target.getAttribute("name"),
-        email_address: this.email,
-        status: "pending"
-      };
-
-      axios
-        .post("/", data, {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-          }
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
+    },
+    handleSubmit(e) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": e.target.getAttribute("name"),
+          ...this.formData
         })
+      })
         .then(result => {
           console.log(result);
         })
-        .catch(result => {
-          console.log(result);
-        });
+        .catch(error => alert(error));
     }
   }
 };
