@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gradient-t-footer p-16 mt-8 text-center text-orange-600">
+  <footer class="bg-gradient-t-footer xs:p-4 sm:p-16 mt-8 text-center text-orange-600">
     <socials size="2x" />
 
     <p class="font-bold">Thought Reactor&copy;{{ year }}, All Rights Reserved.</p>
@@ -15,7 +15,10 @@
           class="hover:underline hover:text-orange-300"
         >TailwindCSS</a>.
         <br />Hosted on
-        <a href="https://netflify.com" class="hover:underline hover:text-orange-300">Netlify</a>.
+        <a
+          href="https://netflify.com"
+          class="hover:underline hover:text-orange-300"
+        >Netlify</a>.
       </p>
     </div>
 

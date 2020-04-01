@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 flex-col items-center justify-center">
+  <div class="xs:p-0 xs:mt-4 sm:p-8 flex-col items-center justify-center">
     <form
       @submit.prevent="handleSubmit"
       name="newsletter"
@@ -25,6 +25,7 @@
         placeholder="Email address"
         class="w-full sm:w-84 py-2 px-3 outline-none bg-grey-600 text-grey-200 placeholder-grey-400 border-l-2 sm:border-b-2 sm:border-l-0 border-grey-400 focus:border-orange-500"
         :disabled="formSuccess"
+        required
       />
       <tr-button type="submit" utils="w-full sm:w-auto">Subscribe</tr-button>
     </form>

@@ -6,10 +6,10 @@
       <g-image src="~/assets/img/logo.svg" class="logo" alt="Thought Reactor Logo"></g-image>
     </g-link>
 
-    <!-- <socials class="text-white" /> -->
+    <socials class="text-white" />
 
     <!-- <h1 class="text-4xl text-white mt-4">Engage. Entertain. Enlighten.</h1> -->
-    <h1 class="text-3xl text-orange-500 mt-2">{{ randomBlurb }}</h1>
+    <!-- <h1 class="text-3xl text-orange-500 mt-2">{{ randomBlurb }}</h1> -->
   </header>
 </template>
 
