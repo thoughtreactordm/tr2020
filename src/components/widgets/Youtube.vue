@@ -3,7 +3,7 @@
     <iframe
       width="560"
       height="349"
-      src="https://www.youtube.com/embed/93tWiavHzWs"
+      :src="src"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
@@ -16,8 +16,17 @@ export default {
   name: "youtube",
 
   props: {
-    id: { type: String, default: "93tWiavHzWs" }
-  }
+    id: { type: String, default: "93tWiavHzWs" },
+  },
+
+  computed: {
+    src() {
+      let root = "https://www.youtube.com/embed/";
+      let settings = "?modestbranding=1";
+
+      return root + this.id + settings;
+    },
+  },
 };
 </script>
 

@@ -13,7 +13,7 @@
 
       <div class="info flex flex-col lg:flex-row lg:items-center">
         <div class="video lg:w-1/2 xs:my-8 lg:my-0">
-          <youtube></youtube>
+          <youtube id="93tWiavHzWs"></youtube>
         </div>
         <div class="info-body lg:p-8 lg:w-1/2">
           <h2 class="xs:text-3xl sm:text-4xl text-shadow leading-tight">

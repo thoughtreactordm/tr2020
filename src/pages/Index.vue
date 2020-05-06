@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container m-auto px-4 lg:px-32 lg:text-center">
+    <div class="container m-auto px-4 md:px-16 lg:px-32 lg:text-center">
       <h1
         class="text-3xl sm:text-5xl lg:text-5xl text-orange-500 mb-4 leading-none mt-8"
       >
@@ -16,7 +16,7 @@
 
     <igeo-showcase />
 
-    <div class="container m-auto px-4">
+    <div class="container m-auto lg:px-16 lg:my-32">
       <newsletter />
     </div>
   </Layout>

@@ -1,15 +1,20 @@
 <template>
   <header
-    class="w-full border-t-8 bg-gradient-b-banner border-gradient-r-brand p-16 flex flex-col justify-center items-center"
+    class="w-full border-t-8 bg-gradient-b-banner border-gradient-r-brand p-4"
   >
-    <g-link href="/" title="Home Page">
-      <g-image src="~/assets/img/logo.svg" class="logo" alt="Thought Reactor Logo"></g-image>
-    </g-link>
+    <div
+      class="container mx-auto px-16 flex flex-col md:flex-row justify-between items-center"
+    >
+      <g-link href="/" title="Home Page">
+        <g-image
+          src="~/assets/img/logo.svg"
+          class="logo"
+          alt="Thought Reactor Logo"
+        ></g-image>
+      </g-link>
 
-    <socials class="text-white" />
-
-    <!-- <h1 class="text-4xl text-white mt-4">Engage. Entertain. Enlighten.</h1> -->
-    <!-- <h1 class="text-3xl text-orange-500 mt-2">{{ randomBlurb }}</h1> -->
+      <socials class="text-white" />
+    </div>
   </header>
 </template>
 
@@ -26,20 +31,20 @@ export default {
       blurbs: [
         "Make games. Not war.",
         "Games that soothe ya' noggin.",
-        "Trying to make games that don't suck since 2016."
-      ]
+        "Trying to make games that don't suck since 2016.",
+      ],
     };
   },
 
   computed: {
     randomBlurb() {
       return this.blurbs[this.blurbIndex];
-    }
+    },
   },
 
   mounted() {
     this.blurbIndex = Math.floor(Math.random() * this.blurbs.length);
-  }
+  },
 };
 </script>
 
@@ -52,7 +57,7 @@ header {
 
 .logo {
   width: 95%;
-  max-width: 512px;
+  max-width: 250px;
   transition: all 150ms ease-in-out;
 
   &:hover {
