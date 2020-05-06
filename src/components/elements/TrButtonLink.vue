@@ -8,6 +8,9 @@
       :target="target"
       :title="title"
     >
+      <span v-show="icon">
+        <font-awesome-icon :icon="icon" size="lg" fixed-width></font-awesome-icon>
+      </span>
       <slot></slot>
     </g-link>
     <a :href="to" :title="title" :target="target" v-else>
@@ -25,7 +28,8 @@ export default {
     target: { type: String, default: "" },
     title: { type: String, default: "" },
     external: { type: Boolean },
-    utils: { type: String, default: "" }
+    utils: { type: String, default: "" },
+    icon: { type: Array, default: null }
   },
 
   computed: {

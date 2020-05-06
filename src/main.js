@@ -8,8 +8,17 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faItchIo } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faItchIo, faTwitch, faTwitter, faYoutube, faInstagram, faHeart);
+library.add(
+  faItchIo,
+  faTwitch,
+  faTwitter,
+  faYoutube,
+  faInstagram,
+  faHeart,
+  faEnvelope
+);
 
 import DefaultLayout from "~/layouts/Default.vue";
 
@@ -20,19 +29,19 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-  UI.forEach(c => {
+  UI.forEach((c) => {
     Vue.component(c.name, c);
   });
 
   head.meta.push({
     name: "description",
     content:
-      "Indie game developer focusing on engaging and challenging puzzle-infused games for PC."
+      "Indie game developer focusing on engaging and challenging puzzle-infused games for PC.",
   });
 
   head.meta.push({
     name: "theme-color",
-    content: "#da4917"
+    content: "#da4917",
   });
 
   head.script.push({
@@ -45,8 +54,8 @@ export default function(Vue, { router, head, isClient }) {
       sameAs: [
         "https://www.facebook.com/ThoughtReactor",
         "https://twitter.com/thought_reactor",
-        "https://www.youtube.com/TheThoughtReactor"
-      ]
-    }
+        "https://www.youtube.com/TheThoughtReactor",
+      ],
+    },
   });
 }

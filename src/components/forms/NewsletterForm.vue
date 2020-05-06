@@ -27,7 +27,7 @@
         :disabled="formSuccess"
         required
       />
-      <tr-button type="submit" utils="w-full sm:w-auto">Subscribe</tr-button>
+      <tr-button type="submit" utils="w-full sm:w-auto" :icon="['fas', 'envelope']">Subscribe</tr-button>
     </form>
 
     <p
