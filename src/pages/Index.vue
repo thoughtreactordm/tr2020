@@ -7,10 +7,10 @@
         Challenging, puzzle-infused games...
       </h1>
       <p class="sm:text-3xl md:text-2xl">
-        We are a teeny-tiny game developer focused on building challenging,
-        puzzle-infused games. From classic puzzle games to immersive
-        narrative-driven adventures, Thought Reactor builds games that engage
-        players minds, sense of wonder, and reward those that seek more.
+        We're a teeny-tiny game developer focused on building challenging,
+        puzzle-infused games. From arcade-style to immersive story-driven
+        adventures, Thought Reactor builds games that engage players minds,
+        sense of wonder, and reward those that seek more.
       </p>
     </div>
 
