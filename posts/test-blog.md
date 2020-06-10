@@ -8,6 +8,8 @@ We're out here testing this blog! Let's figure out how all this mess works so we
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a justo mattis, semper quam ac, tempus nisi. Nulla ornare faucibus tellus, in viverra lectus tempor eu. Quisque ultrices sapien ac volutpat dapibus. Proin cursus vitae metus vitae sodales. Vestibulum dolor nulla, faucibus eget viverra egestas, pharetra eget nunc. Suspendisse non urna quis lorem tincidunt aliquam ac non ligula. Aliquam pulvinar erat vitae vehicula condimentum. Cras molestie nec erat sit amet luctus. In ultrices sodales vulputate.
 
+![](/uploads/backtotheswingofthings_4-23-19.jpg)
+
 Pellentesque ac magna ac velit vestibulum malesuada. Etiam scelerisque libero ut condimentum porta. Vivamus quis diam in elit eleifend molestie. Duis ut iaculis quam. In nec commodo nibh. Nullam maximus efficitur elit sed commodo. Suspendisse sit amet mollis tortor. Etiam egestas turpis erat, quis cursus metus molestie sed. Integer viverra leo mi, sed mattis erat ornare id.
 
 Phasellus tempus lacus est, a cursus lacus tempus sed. Quisque dapibus quam vitae leo consectetur molestie. Nullam non diam sapien. In aliquam, mauris a semper vulputate, est nulla fringilla augue, et maximus libero nisl sit amet tellus. Nullam malesuada commodo neque non varius. Aliquam erat volutpat. Nullam pulvinar mollis risus, sed maximus dui venenatis eget. Pellentesque in bibendum metus, ac egestas tortor. Sed sit amet mi id nisi tincidunt luctus id at lacus. Fusce aliquam ex at est tempor, in sollicitudin erat commodo. Maecenas in risus at urna feugiat volutpat vel nec neque.
