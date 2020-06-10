@@ -1,14 +1,8 @@
 <template>
   <section class="showcase py-16 lg:py-32 my-16 w-full border-t-4">
-    <div
-      class="container mx-auto md:px-16 flex flex-col items-center lg:text-center text-xl"
-    >
-      <g-link href="/" title="Home Page">
-        <g-image
-          src="~/assets/img/igeo_logo.png"
-          class="logo mb-4"
-          alt="Thought Reactor Logo"
-        ></g-image>
+    <div class="container mx-auto md:px-16 flex flex-col items-center lg:text-center text-xl">
+      <g-link href="https://igeogame.com" title="IGEO DX Logo">
+        <g-image src="~/assets/img/igeo_logo.png" class="logo mb-4" alt="Thought Reactor Logo"></g-image>
       </g-link>
 
       <div class="info flex flex-col lg:flex-row lg:items-center">
@@ -16,9 +10,7 @@
           <vimeo id="133298197"></vimeo>
         </div>
         <div class="info-body lg:p-8 lg:w-1/2">
-          <h2 class="xs:text-3xl sm:text-4xl text-shadow leading-tight">
-            Open Alpha Coming June 2020
-          </h2>
+          <h2 class="xs:text-3xl sm:text-4xl text-shadow leading-tight">Open Alpha Coming June 2020</h2>
           <p class="lg:text-xl my-6">
             Casual in it's approach but punishing in it's execution, IGEO is a
             fun and rewarding arcade puzzle game. Mechanically simple but
@@ -30,8 +22,7 @@
             to="https://thoughtreactor.itch.io/igeo-dx"
             :icon="['fab', 'itch-io']"
             utils="text-white"
-            >Follow IGEO DX on Itch.io</tr-button-link
-          >
+          >Follow IGEO DX on Itch.io</tr-button-link>
         </div>
       </div>
     </div>
@@ -43,7 +34,7 @@ import Vimeo from "@/components/widgets/Vimeo.vue";
 
 export default {
   name: "igeo-showcase",
-  components: { Vimeo },
+  components: { Vimeo }
 };
 </script>
 
