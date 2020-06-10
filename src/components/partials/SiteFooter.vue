@@ -1,24 +1,43 @@
 <template>
-  <footer class="bg-gradient-t-footer xs:p-4 sm:p-16 mt-8 text-center text-orange-600">
+  <footer
+    class="bg-gradient-t-footer xs:p-4 sm:p-16 mt-8 text-center text-orange-600 sticky bottom-0"
+  >
     <socials size="2x" />
 
-    <p class="font-bold">Thought Reactor&copy;{{ year }}, All Rights Reserved.</p>
+    <p class="font-bold">
+      Thought Reactor&copy;{{ year }}, All Rights Reserved.
+    </p>
 
-    <div class="font-bold text-orange-700 mt-4 flex items-center justify-center">
+    <div
+      class="font-bold text-orange-700 mt-4 flex items-center justify-center"
+    >
       <p>
         Built with
-        <font-awesome-icon :icon="['fas', 'heart']" fixed-width></font-awesome-icon>&nbsp;using
-        <a href="https://vuejs.org" class="hover:underline hover:text-orange-300">Vue</a>,
-        <a href="https://gridsome.org" class="hover:underline hover:text-orange-300">Gridsome</a>, and
+        <font-awesome-icon
+          :icon="['fas', 'heart']"
+          fixed-width
+        ></font-awesome-icon
+        >&nbsp;using
+        <a
+          href="https://vuejs.org"
+          class="hover:underline hover:text-orange-300"
+          >Vue</a
+        >,
+        <a
+          href="https://gridsome.org"
+          class="hover:underline hover:text-orange-300"
+          >Gridsome</a
+        >, and
         <a
           href="https://tailwindcss.com"
           class="hover:underline hover:text-orange-300"
-        >TailwindCSS</a>.
-        <br />Hosted on
+          >TailwindCSS</a
+        >. <br />Hosted on
         <a
           href="https://netflify.com"
           class="hover:underline hover:text-orange-300"
-        >Netlify</a>.
+          >Netlify</a
+        >.
       </p>
     </div>
 
@@ -28,7 +47,8 @@
         <a
           class="hover:underline hover:text-orange-300"
           href="https://github.com/thoughtreactordm/tr2020"
-        >GitHub</a>.
+          >GitHub</a
+        >.
       </p>
     </div>
   </footer>
@@ -45,7 +65,7 @@ export default {
   computed: {
     year() {
       return new Date().getFullYear();
-    }
-  }
+    },
+  },
 };
 </script>

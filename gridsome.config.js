@@ -11,6 +11,11 @@ module.exports = {
       ],
     },
   },
+
+  templates: {
+    Post: "/blog/:title",
+  },
+
   plugins: [
     {
       use: "gridsome-plugin-netlify-cms",
