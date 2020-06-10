@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-gradient-t-footer xs:p-4 sm:p-16 mt-8 text-center text-orange-600 sticky bottom-0"
+    class="bg-gradient-t-footer xs:p-4 sm:p-16 mt-8 text-center text-orange-600"
   >
     <socials size="2x" />
 

@@ -1,12 +1,28 @@
 <template>
   <Layout>
-    <section class="container mx-auto px-24 py-16">
-      <h1 class="text-5xl text-orange-500">{{ $page.post.title }}</h1>
-      <h3 class="text-2xl">{{ $page.post.date }}</h3>
+    <section class="container mx-auto px-4 md:px-16 lg:px-32 py-8">
+      <div class="mb-4">
+        <tr-link to="/blog">
+          <font-awesome-icon
+            :icon="['fas', 'chevron-left']"
+            fixed-width
+          ></font-awesome-icon>
+          Back to Blogs</tr-link
+        >
+      </div>
+
+      <div class="text-center border-dashed border-b-2 border-orange-500 pb-4">
+        <h1 class="text-5xl text-orange-500">{{ $page.post.title }}</h1>
+        <h3 class="text-2xl">{{ $page.post.date }}</h3>
+      </div>
     </section>
 
-    <section class="container mx-auto px-24">
-      <div v-html="$page.post.content"></div>
+    <section class="container mx-auto px-4 md:px-16 lg:px-32 mb-16">
+      <div class="blog-content" v-html="$page.post.content"></div>
+    </section>
+
+    <section class="container mx-auto">
+      <Newsletter />
     </section>
   </Layout>
 </template>
@@ -20,3 +36,27 @@ query Post ($id: ID!) {
     }
 }
 </page-query>
+
+<script>
+import Newsletter from "@/components/partials/Newsletter.vue";
+
+export default {
+  components: { Newsletter },
+
+  metaInfo() {
+    return {
+      title: this.$page.post.title,
+      meta: [{ name: "description", content: this.$page.post.excerpt }],
+    };
+  },
+};
+</script>
+
+<style lang="scss">
+.blog-content {
+  p {
+    margin-bottom: 1.75em;
+    line-height: 1.75;
+  }
+}
+</style>

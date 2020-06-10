@@ -3,9 +3,9 @@
     class="w-full border-t-8 bg-gradient-b-banner border-gradient-r-brand p-4"
   >
     <div
-      class="container mx-auto px-16 flex flex-col md:flex-row justify-between items-center"
+      class="container mx-auto px-4 md:px-16 flex flex-col md:flex-row justify-between items-center"
     >
-      <g-link href="/" title="Home Page">
+      <g-link to="/" title="Home Page">
         <g-image
           src="~/assets/img/logo.svg"
           class="logo"
@@ -13,7 +13,15 @@
         ></g-image>
       </g-link>
 
-      <socials class="text-white" />
+      <div class="flex">
+        <ul class="list-none flex-col md:flex-row flex items-center">
+          <li v-for="item in navItems" :key="item.label" class="px-4 mr-2">
+            <tr-link :to="item.to" utils="text-white">{{ item.label }}</tr-link>
+          </li>
+        </ul>
+
+        <socials class="text-white" />
+      </div>
     </div>
   </header>
 </template>
@@ -27,23 +35,11 @@ export default {
 
   data() {
     return {
-      blurbIndex: 0,
-      blurbs: [
-        "Make games. Not war.",
-        "Games that soothe ya' noggin.",
-        "Trying to make games that don't suck since 2016.",
+      navItems: [
+        { label: "Blog", to: "/blog" },
+        { label: "About", to: "/about" },
       ],
     };
-  },
-
-  computed: {
-    randomBlurb() {
-      return this.blurbs[this.blurbIndex];
-    },
-  },
-
-  mounted() {
-    this.blurbIndex = Math.floor(Math.random() * this.blurbs.length);
   },
 };
 </script>

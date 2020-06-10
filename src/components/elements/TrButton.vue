@@ -5,7 +5,12 @@
     :class="dynamicClass"
   >
     <span v-show="icon.length > 1">
-      <font-awesome-icon :icon="icon" size="lg" fixed-width></font-awesome-icon>
+      <font-awesome-icon
+        :icon="icon"
+        :size="iconSize"
+        fixed-width
+        class="mr-1"
+      ></font-awesome-icon>
     </span>
     <slot></slot>
   </button>
@@ -18,19 +23,20 @@ export default {
   props: {
     type: { type: String, default: "button" },
     utils: { type: String, default: "" },
-    icon: { type: Array, default: () => ["fas", "heart"] }
+    icon: { type: Array, default: () => ["fas", "heart"] },
+    iconSize: { type: String, default: "lg" },
   },
 
   computed: {
     dynamicClass() {
       return this.utils;
-    }
+    },
   },
 
   methods: {
     onClick() {
       this.$emit("click");
-    }
-  }
+    },
+  },
 };
 </script>

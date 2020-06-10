@@ -9,7 +9,12 @@
       :title="title"
     >
       <span v-show="icon">
-        <font-awesome-icon :icon="icon" size="lg" fixed-width></font-awesome-icon>
+        <font-awesome-icon
+          :icon="icon"
+          :size="iconSize"
+          fixed-width
+          class="mr-1"
+        ></font-awesome-icon>
       </span>
       <slot></slot>
     </g-link>
@@ -29,13 +34,14 @@ export default {
     title: { type: String, default: "" },
     external: { type: Boolean },
     utils: { type: String, default: "" },
-    icon: { type: Array, default: null }
+    icon: { type: Array, default: () => ["fas", "heart"] },
+    iconSize: { type: String, default: "lg" },
   },
 
   computed: {
     dynamicClass() {
       return this.utils;
-    }
-  }
+    },
+  },
 };
 </script>

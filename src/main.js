@@ -9,6 +9,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faItchIo } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faItchIo,
@@ -17,7 +18,8 @@ library.add(
   faYoutube,
   faInstagram,
   faHeart,
-  faEnvelope
+  faEnvelope,
+  faChevronLeft
 );
 
 import DefaultLayout from "~/layouts/Default.vue";
