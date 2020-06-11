@@ -14,6 +14,7 @@ module.exports = {
 
   templates: {
     Post: "/blog/:title",
+    Tag: "/tag/:id",
   },
 
   plugins: [
@@ -43,6 +44,12 @@ module.exports = {
       options: {
         path: "posts/**/*.md",
         typeName: "Post",
+        refs: {
+          tags: {
+            typeName: "Tag",
+            create: true,
+          },
+        },
         remark: {
           plugins: [
             // ...local plugins

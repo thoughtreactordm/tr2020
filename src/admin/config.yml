@@ -21,4 +21,8 @@ collections:
           widget: "boolean",
           default: true,
         }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: { label: Name, name: name, widget: string, default: "tag" }
       - { label: "Body", name: "body", widget: "markdown" }

@@ -10,6 +10,9 @@ import { faItchIo } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faItchIo,
@@ -19,7 +22,10 @@ library.add(
   faInstagram,
   faHeart,
   faEnvelope,
-  faChevronLeft
+  faChevronLeft,
+  faBookOpen,
+  faClock,
+  faTags
 );
 
 import DefaultLayout from "~/layouts/Default.vue";

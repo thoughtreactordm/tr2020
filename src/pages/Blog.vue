@@ -14,23 +14,11 @@
         </p>
       </div>
 
-      <div
+      <blog-card
         v-for="edge in $page.posts.edges"
         :key="edge.node.id"
-        class="py-8 border-b-4 border-gradient-r-brand flex-col md:flex-row flex justify-between items-center"
-      >
-        <div>
-          <h3 class="text-3xl text-white">
-            {{ edge.node.title }}
-          </h3>
-          <p>
-            <em>{{ edge.node.excerpt }}</em>
-          </p>
-          <p>{{ edge.node.timeToRead }} min read</p>
-        </div>
-
-        <tr-button-link :to="edge.node.path">Read</tr-button-link>
-      </div>
+        :post="edge.node"
+      />
     </section>
   </Layout>
 </template>
@@ -43,14 +31,19 @@ query {
         id
         title
         excerpt
-        date (format: "D. MMMM YYYY")
+        date (format: "MMMM D, YYYY")
         timeToRead
         ...on Post {
-        id
-        title
-        path
+            id
+            title
+            path
         }
         path
+        tags {
+            id
+            title
+            path
+        }
       }
     }
   }
@@ -58,7 +51,10 @@ query {
 </page-query>
 
 <script>
+import BlogCard from "@/components/partials/BlogCard.vue";
+
 export default {
+  components: { BlogCard },
   metaInfo: {
     title: "Blog",
   },

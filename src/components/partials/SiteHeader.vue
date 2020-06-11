@@ -3,20 +3,25 @@
     class="w-full border-t-8 bg-gradient-b-banner border-gradient-r-brand p-4"
   >
     <div
-      class="container mx-auto px-4 md:px-16 flex flex-col md:flex-row justify-between items-center"
+      class="container mx-auto px-4 md:px-16 flex flex-col md:flex-row justify-between items-center h-24"
     >
       <g-link to="/" title="Home Page">
         <g-image
           src="~/assets/img/logo.svg"
           class="logo"
           alt="Thought Reactor Logo"
+          :immediate="true"
         ></g-image>
       </g-link>
 
       <div class="flex">
         <ul class="list-none flex-col md:flex-row flex items-center">
-          <li v-for="item in navItems" :key="item.label" class="px-4 mr-2">
-            <tr-link :to="item.to" utils="text-white">{{ item.label }}</tr-link>
+          <li v-for="item in navItems" :key="item.label" class="px-6 mr-2">
+            <g-link
+              :to="item.to"
+              class="nav-item text-white font-bold block py-4 hover:text-orange-400"
+              >{{ item.label }}</g-link
+            >
           </li>
         </ul>
 
@@ -59,6 +64,13 @@ header {
   &:hover {
     transform: scale(1.025);
     filter: drop-shadow(0 3px 20px rgba(218, 73, 23, 0.5));
+  }
+}
+
+.nav-item {
+  &.active,
+  &.active--exact {
+    color: #da4918;
   }
 }
 </style>
