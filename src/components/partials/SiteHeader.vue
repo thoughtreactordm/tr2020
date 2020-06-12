@@ -3,7 +3,7 @@
     class="w-full border-t-8 bg-gradient-b-banner border-gradient-r-brand p-4"
   >
     <div
-      class="container mx-auto px-4 md:px-16 flex flex-col md:flex-row justify-between items-center h-24"
+      class="container mx-auto px-4 md:px-16 flex flex-col md:flex-row justify-between items-center min-h-24"
     >
       <g-link to="/" title="Home Page">
         <g-image
@@ -14,9 +14,13 @@
         ></g-image>
       </g-link>
 
-      <div class="flex">
-        <ul class="list-none flex-col md:flex-row flex items-center">
-          <li v-for="item in navItems" :key="item.label" class="px-6 mr-2">
+      <div class="flex flex-col lg:flex-row">
+        <ul class="list-none flex flex-row items-center justify-center">
+          <li
+            v-for="item in navItems"
+            :key="item.label"
+            class="px-4 lg:px-6 mr-2"
+          >
             <g-link
               :to="item.to"
               class="nav-item text-white font-bold block py-4 hover:text-orange-400"

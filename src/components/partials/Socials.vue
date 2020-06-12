@@ -7,7 +7,10 @@
       :key="social.icon"
       class="social-icon p-2 hover:text-orange-400"
     >
-      <font-awesome-icon :icon="['fab', social.icon]" :size="size"></font-awesome-icon>
+      <font-awesome-icon
+        :icon="['fab', social.icon]"
+        :size="size"
+      ></font-awesome-icon>
     </a>
   </div>
 </template>
@@ -19,8 +22,8 @@ export default {
   props: {
     size: {
       type: String,
-      default: "lg"
-    }
+      default: "lg",
+    },
   },
 
   data() {
@@ -29,31 +32,31 @@ export default {
         {
           icon: "itch-io",
           label: "Thought Reactor at Itch.io",
-          url: "https://thoughtreactor.itch.io"
+          url: "https://thoughtreactor.itch.io",
         },
         {
           icon: "twitter",
           label: "@thought_reactor on Twitter",
-          url: "https://twitter.com/thought_reactor"
+          url: "https://twitter.com/thought_reactor",
         },
         {
           icon: "instagram",
           label: "@thoughtreactor on Instagram",
-          url: "https://instagram.com/thoughtreactor"
+          url: "https://instagram.com/thoughtreactor",
         },
         {
           icon: "twitch",
           label: "ThoughtReactorDEV on Twitch",
-          url: "https://twitch.tv/thoughtreactordev"
+          url: "https://twitch.tv/thoughtreactordev",
         },
         {
-          icon: "youtube",
-          label: "Thought Reactor on YouTube",
-          url: "https://youtube.com/TheThoughtReactor"
-        }
-      ]
+          icon: "discord",
+          label: "Thought Reactor Discord Channel",
+          url: "https://discord.gg/wXEPvew",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

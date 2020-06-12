@@ -6,19 +6,25 @@
       <h3 class="text-3xl text-white">
         <tr-link :to="post.path">{{ post.title }}</tr-link>
       </h3>
+
       <h4 class="text-white">{{ post.date }}</h4>
+
       <p class="mt-2">
         <em>{{ post.excerpt }}</em>
       </p>
-      <p class="text-grey-400 font-thin">
-        <font-awesome-icon
-          :icon="['fas', 'clock']"
-          fixed-width
-        ></font-awesome-icon
-        >{{ post.timeToRead }} min read
-      </p>
 
-      <blog-tags :post="post" />
+      <div class="mt-4">
+        <p class="text-grey-400 font-thin">
+          <font-awesome-icon
+            :icon="['fas', 'clock']"
+            fixed-width
+            class="mr-1"
+          ></font-awesome-icon
+          >{{ post.timeToRead }} min read
+        </p>
+
+        <blog-tags :post="post" />
+      </div>
     </div>
 
     <div class="mt-4 md:mt-0">

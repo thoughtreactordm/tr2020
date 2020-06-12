@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library, layer } from "@fortawesome/fontawesome-svg-core";
 import { faTwitch } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faItchIo } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +18,7 @@ library.add(
   faItchIo,
   faTwitch,
   faTwitter,
-  faYoutube,
+  faDiscord,
   faInstagram,
   faHeart,
   faEnvelope,
