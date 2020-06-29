@@ -3,9 +3,7 @@
     <div class="container m-auto px-4 md:px-16 lg:px-32 lg:text-center">
       <h1
         class="text-3xl sm:text-5xl lg:text-5xl text-orange-500 mb-4 leading-none mt-8"
-      >
-        Challenging, puzzle-infused games...
-      </h1>
+      >Challenging, puzzle-infused games...</h1>
       <p class="sm:text-3xl md:text-2xl">
         We're a teeny-tiny game developer focused on building challenging,
         puzzle-infused games. From arcade-style to immersive story-driven
@@ -30,7 +28,7 @@ export default {
   components: { IgeoShowcase, Newsletter },
 
   metaInfo: {
-    title: "Games that soothe ya' noggin'",
-  },
+    title: "Challening, puzzle-infused games"
+  }
 };
 </script>
