@@ -7,13 +7,13 @@
 
       <div class="info flex flex-col lg:flex-row lg:items-center">
         <div class="video lg:w-1/2 xs:my-8 lg:my-0">
-          <vimeo id="133298197"></vimeo>
+          <vimeo id="441158036"></vimeo>
         </div>
         <div class="info-body lg:p-8 lg:w-1/2">
-          <h2 class="xs:text-3xl sm:text-4xl text-shadow leading-tight">Open Alpha Coming June 2020</h2>
+          <h2 class="xs:text-3xl sm:text-4xl text-shadow leading-tight">Play the Open Alpha Now!</h2>
           <p class="lg:text-xl my-6">
             Casual in it's approach but punishing in it's execution, IGEO is a
-            fun and rewarding arcade puzzle game. Mechanically simple but
+            Sokoban-style puzzler. Mechanically simple but
             challenging, players will push and combine like-shapes to solve
             increasingly complex spatial and logic puzzles.
           </p>
@@ -22,7 +22,7 @@
             to="https://thoughtreactor.itch.io/igeo-dx"
             :icon="['fab', 'itch-io']"
             utils="text-white"
-          >Follow IGEO DX on Itch.io</tr-button-link>
+          >Download Now on Itch.io</tr-button-link>
         </div>
       </div>
     </div>
