@@ -10,7 +10,9 @@
           <vimeo id="441158036"></vimeo>
         </div>
         <div class="info-body lg:p-8 lg:w-1/2">
-          <h2 class="xs:text-3xl sm:text-4xl text-shadow leading-tight">Play the Open Alpha Now!</h2>
+          <h2
+            class="xs:text-3xl sm:text-4xl text-shadow leading-tight"
+          >Coming to Steam December 2020!</h2>
           <p class="lg:text-xl my-6">
             Casual in it's approach but punishing in it's execution, IGEO is a
             Sokoban-style puzzler. Mechanically simple but
@@ -18,11 +20,18 @@
             increasingly complex spatial and logic puzzles.
           </p>
 
+          <iframe
+            src="https://store.steampowered.com/widget/659360/"
+            frameborder="0"
+            width="100%"
+            height="250"
+          ></iframe>
+
           <tr-button-link
             to="https://thoughtreactor.itch.io/igeo-dx"
             :icon="['fab', 'itch-io']"
             utils="text-white"
-          >Download Now on Itch.io</tr-button-link>
+          >Download Alpha on Itch.io</tr-button-link>
         </div>
       </div>
     </div>
@@ -34,7 +43,7 @@ import Vimeo from "@/components/widgets/Vimeo.vue";
 
 export default {
   name: "igeo-showcase",
-  components: { Vimeo }
+  components: { Vimeo },
 };
 </script>
 

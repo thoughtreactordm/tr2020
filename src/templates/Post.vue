@@ -3,16 +3,12 @@
     <section class="container mx-auto px-4 md:px-16 lg:px-32 py-8">
       <div class="mb-4">
         <tr-link to="/blog">
-          <font-awesome-icon
-            :icon="['fas', 'chevron-left']"
-            fixed-width
-          ></font-awesome-icon>
-          Back to Blogs</tr-link
-        >
+          <font-awesome-icon :icon="['fas', 'chevron-left']" fixed-width></font-awesome-icon>Back to Blogs
+        </tr-link>
       </div>
 
       <div class="text-center border-dashed border-b-2 border-orange-500 pb-4">
-        <h1 class="text-5xl text-orange-500">{{ $page.post.title }}</h1>
+        <h1 class="text-4xl md:text-5xl text-orange-500 leading-none">{{ $page.post.title }}</h1>
         <h3 class="text-2xl">{{ $page.post.date }}</h3>
 
         <blog-tags :post="$page.post" />

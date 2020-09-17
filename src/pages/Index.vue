@@ -5,7 +5,7 @@
         class="text-3xl sm:text-5xl lg:text-5xl text-orange-500 mb-4 leading-none mt-8"
       >Challenging, puzzle-infused games...</h1>
       <p class="sm:text-3xl md:text-2xl">
-        We're a teeny-tiny game developer focused on building challenging,
+        Teeny-tiny game developer focused on building challenging,
         puzzle-infused games. From arcade-style to immersive story-driven
         adventures, Thought Reactor builds games that engage players minds,
         sense of wonder, and reward those that seek more.
@@ -28,7 +28,7 @@ export default {
   components: { IgeoShowcase, Newsletter },
 
   metaInfo: {
-    title: "Challening, puzzle-infused games"
-  }
+    title: "Challening, puzzle-infused games",
+  },
 };
 </script>
